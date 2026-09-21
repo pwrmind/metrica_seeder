@@ -1,0 +1,21 @@
+counter_id: ""
+oauth_token: ""
+client_id_type: "CLIENT_ID"
+
+paths:
+  db:  "journey.db"
+  csv: "offline_conversions.csv"
+
+targets:
+  order_created:
+    price: 0
+    currency: "RUB"
+    offset_seconds: 86400
+  order_paid:
+    price: 3000
+    currency: "RUB"
+    offset_seconds: 3600
+
+http:
+  timeout_upload: 60
+  timeout_get:    30

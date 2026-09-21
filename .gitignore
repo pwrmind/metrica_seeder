@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+journey.db
+journey.db-wal
+journey.db-shm
+offline_conversions.csv
+.env
+phones.txt
