@@ -267,10 +267,12 @@ USAGE = """\
 """
 
 
-def main(argv: list[str]) -> int:
+def main(argv: list[str] | None = None) -> int:
+    if argv is None:
+        argv = sys.argv
     if len(argv) < 2:
         print(USAGE)
-        return 1
+        return 1    
 
     load_config()
     cmd = argv[1]

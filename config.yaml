@@ -15,6 +15,14 @@ targets:
     price: 3000
     currency: "RUB"
     offset_seconds: 3600
+  order_cancelled:
+    price: 0
+    currency: "RUB"
+    offset_seconds: 1800
+  order_spam:
+    price: 0
+    currency: "RUB"
+    offset_seconds: 1800
 
 http:
   timeout_upload: 60
